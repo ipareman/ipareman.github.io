@@ -228,17 +228,17 @@
         body.classList.add("modalopen");
     }
 
-    window.onclick = function(event) {
-    if (event.target == modal_tags_background) {
-        modal_tags_background.classList.remove("active");
-        back_tags.classList.remove("active");
-        body.classList.remove("modalopen");
-    } else if (event.target == modal_books_background) {
-        modal_books_background.classList.remove("active");
-        back_books.classList.remove("active");
-        body.classList.remove("modalopen");
-    }
-    };
+    // window.onclick = function(event) {
+    // if (event.target == modal_tags_background) {
+    //     modal_tags_background.classList.remove("active");
+    //     back_tags.classList.remove("active");
+    //     body.classList.remove("modalopen");
+    // } else if (event.target == modal_books_background) {
+    //     modal_books_background.classList.remove("active");
+    //     back_books.classList.remove("active");
+    //     body.classList.remove("modalopen");
+    // }
+    // };
 
     tags_input.addEventListener('input', function() {
         let filter = tags_input.value.toLowerCase();
