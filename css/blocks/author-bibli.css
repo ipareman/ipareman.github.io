@@ -1,0 +1,37 @@
+.first_line-bibly {
+    display: block;
+    margin: 0 auto;
+    width: 53.125rem;
+    border: none;
+    border-bottom: 1px solid #292920;
+    margin-top: 8rem;
+}
+
+.author-bibli {
+    max-width: 53.125rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 7.813rem);
+    grid-column-gap: 1.25rem;
+    grid-row-gap: 2.063rem;
+    justify-content: space-around;
+    margin: 5.563rem auto 0 auto;
+    border-right: 1px solid #292920;
+    border-left: 1px solid #292920;
+    padding-left: 5.563rem;
+    padding-right: 5.563rem;
+}
+
+.author-book {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 11.438rem;
+    background-color: #A1A1A1;
+    box-sizing: border-box;
+    color: #EDE9E9;
+    font-size: 1.25rem;
+}
+
+.desktop-bookmarks.author {
+    margin-top: 5rem;
+}

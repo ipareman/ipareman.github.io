@@ -1,0 +1,81 @@
+.search {
+    margin-top: 16.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.188rem;
+}
+
+.search__form {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+.search__form-button {
+    display: block;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #292920;
+    padding-bottom: 1rem;
+    padding-left: 1px;
+}
+
+.search__form-button-svg {
+    display: block;
+    width: 1.875rem;
+    height: 1.125rem;
+}
+
+.search__form-button-svg:hover {
+    filter:drop-shadow(0 0 0.75rem #181818)
+}
+
+.search__form-input {
+    display: block;
+    width: 50.813rem;
+    line-height: 1.5rem;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #292920;
+    outline: none;
+    text-align: center;
+    font-family: Mltsvfont;
+    font-size: 1.25rem;
+}
+
+.search__list {
+    display: flex;
+    flex-direction: row;
+    width: 52.5rem;
+    justify-content: space-between;
+    align-items: center;
+    color: #C3C2C2;
+    font-size: 1.25rem;
+}
+
+.search__list button {
+    display: block;
+    max-width: fit-content;
+    border: none;
+    color: #C3C2C2;
+    outline: none;
+    background: transparent;
+    padding: 0;
+}
+
+.search__list button:hover {
+    filter:drop-shadow(0 0 0.5rem #1818184d);
+}
+
+::-webkit-scrollbar {
+    width: 14px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: #aaaaa9;
+    border-right: 9px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Профиль</title>
+
+</head>
+<body>
+    <header class="header">
+        <nav class="header__menu">
+            <ul class="header__list">
+                <li><a href="index.html" class="header__list-link">Строка</a></li>
+                <li><a href="collections.html" class="header__list-link">Подборки</a></li>
+                <li><a href="bookmarks.html" class="header__list-link">Закладки</a></li>
+                <li class ="header__list-item">Профиль</li>
+            </ul>
+        </nav>
+        <a href="" class="hamburger">
+            <span class="hamburger__plank"></span>
+            <span class="hamburger__plank"></span>
+            <span class="hamburger__plank"></span>
+        </a>
+        <nav class="header__menu-vertical">
+            <ul class="header__list-vertical">
+                <li><a href="index.html" class="header__list-link">Строка</a></li>
+                <li><a href="collections.html" class="header__list-link">Подборки</a></li>
+                <li><a href="bookmarks.html" class="header__list-link">Закладки</a></li>
+                <li><a href="profile.html" class="header__list-link">Профиль</a></li>
+            </ul>
+            <img src="/img/logo-ssss.svg" alt="logo" class="logo-vert">
+        </nav>
+        <div class="flex-logo">
+            <img src="/img/logo-ssss.svg" class="logo">
+        </div>
+    </header>
+    <main class="main">
+        <section class="hero__profile-line">
+            <div class="hero__reg-line-auth"> 
+                <button class="hero__line-reg" id="register">Регистрация</button>
+                <button class="hero__line-auth" id="auth">Авторизация</button>
+            </div>
+            <form class="hero__profile-authenticate" id="auth-form">
+                <div class="hero__auth-line-form">
+                    <div class="auth-line-form-login">Логин</div>
+                    <div class="auth-line-form-password">Пароль</div>
+                    <div class="auth-line-form-example-login"><input type="text" placeholder="пример_логина" required></div>
+                    <div class="auth-line-form-example-password"><input type="password" placeholder="******" required></div>
+                </div>
+                <div class="hero__line-auth-authenthicate">
+                    <button class="hero__line-auth-button">Авторизоваться</button>
+                    <button class="hero__line-password-button">Забыли пароль?</button>
+                </div>
+            </form>
+            
+            <form class="hero__profile-registration" id="register-form">
+                <div class="hero__reg-line-form">
+                    <div class="reg-line-form-m-login">Логин</div>
+                    <div class="reg-line-form-m-mail">Почта</div>
+                    <div class="reg-line-form-m-password">Пароль</div>
+                    <div class="reg-line-form-m-password-repeat">Повтор пароля</div>
+                    <div class="reg-line-form-example-login"><input type="text" placeholder="пример_логина" required></div>
+                    <div class="reg-line-form-example-mail"><input type="text" placeholder="пример_почты" required></div>
+                    <div class="reg-line-form-example-password"><input type="password" placeholder="*******" required></div>
+                    <div class="reg-line-form-example-password-repeat"><input type="password" placeholder="*******" required></div>
+                </div>
+                <div class="hero__line-reg-registration">
+                    <button class="hero__line-reg-button">Зарегестрироваться</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="stroke__footer">
+            <div class="footer__main-block">
+                <div><a href="index.html">Строка</a></div>
+                <div><a href="collections.html">Подборки</a></div>
+                <div><a href="bookmarks.html">Закладки</a></div>
+                <div><a href="profile.html">Профиль</a></div>
+            </div>
+            <div class="footer__main-block">
+                <div>mail: stroka@mail.example</div>
+                <div>tg: @stroka</div>
+                <div>tel: +7 (123) 456-78-90</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+<script>
+    document.getElementById('register').onclick = myFunction1;
+    function myFunction1() {
+      document.getElementById('register').style.color = 'rgba(41, 41, 32, 1)';
+      document.getElementById('auth').style.color = 'rgba(41, 41, 32, 0.3)';
+      document.getElementById('auth-form').style.display = 'none';
+      document.getElementById('register-form').style.display = 'block';
+    }
+
+    document.getElementById('auth').onclick = myFunction2;
+    function myFunction2() {
+      document.getElementById('auth').style.color = 'rgba(41, 41, 32, 1)';
+      document.getElementById('register').style.color = 'rgba(41, 41, 32, 0.3)';
+      document.getElementById('auth-form').style.display = 'block';
+      document.getElementById('register-form').style.display = 'none';
+    }
+</script>
+<script src="/js/burger.js"></script>

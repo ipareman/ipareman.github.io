@@ -1,0 +1,89 @@
+.header__menu {
+    margin-top: 4rem;  
+    display: flex;
+    justify-content: center;
+}
+
+.header__list {
+    font-size: 1.5rem;
+    color: #292920;
+    display: flex;
+    column-gap: 6.563rem; 
+}
+
+/* Для border-bottom */
+.header__list-item,
+.header__list-link {
+    padding-right: 0.25rem;
+    padding-left: 0.25rem;
+}
+
+.header__list-item {
+    border-bottom: 1px #292920 solid;
+    padding-bottom: 0.375rem;
+}
+
+.header__list-link {
+    text-decoration: none;
+    color: #292920;
+    position: relative;
+    border-bottom: 1px solid #c3c2c200;
+    transition: border 0.31s;
+    padding-bottom: 0.563rem;
+}
+
+.header__list-link:hover {
+    border-bottom: 1px solid #C3C2C2;
+}
+
+/* Hamburger */
+
+.header__menu-vertical {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    position: relative;
+    z-index: 3;
+    width: fit-content;
+}
+
+.hamburger__plank {
+    display: block;
+    background: #292929;
+    height: 2px;
+    width: 50px;
+    opacity: 1;
+    transition: transform .3s, opacity .3s;
+}
+
+.flex-logo {
+    display: flex;
+    z-index: 1;
+    position: absolute;
+    top: 2rem;
+    right: 5rem;
+    justify-content: flex-end;
+}
+
+.logo {
+    display: block;
+    width: 6rem;
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.logo-vert {
+    display: block;
+    position: absolute;
+    top: 2rem;
+    right: 5rem;
+    width: 6rem;
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+}

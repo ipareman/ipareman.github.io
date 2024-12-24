@@ -1,0 +1,40 @@
+.quotes {
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    left: 40vw;
+    margin-top: 13.125rem;
+    font-size: 1.5rem;
+}
+
+.quote a {
+    display: block;
+    width: max-content;
+    color: #E8E8E8
+}
+
+/* Цитаты */
+.quote a:first-child::after {
+    content: "»"
+}
+
+.quote a:first-child::before {
+    content: "«"
+}
+
+/* Отступы */
+.quote a:first-child {
+    margin-bottom: 1.688rem;
+}
+
+.quote a:last-child {
+    margin-bottom: 1rem;
+    margin-left: 11rem;
+}
+
+/* Ссылки */
+.quotes__quote-main a {
+    text-decoration: none;
+    color: #292920;
+}

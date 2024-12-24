@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Закладки</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="header__menu">
+            <ul class="header__list">
+                <li><a href="index.html" class="header__list-link">Строка</a></li>
+                <li><a href="collections.html" class="header__list-link">Подборки</a></li>
+                <li class="header__list-item">Закладки</li>
+                <li><a href="profile.html" class="header__list-link">Профиль</a></li>
+            </ul>
+        </nav>
+        <a href="" class="hamburger">
+            <span class="hamburger__plank"></span>
+            <span class="hamburger__plank"></span>
+            <span class="hamburger__plank"></span>
+        </a>
+        <nav class="header__menu-vertical">
+            <ul class="header__list-vertical">
+                <li><a href="index.html" class="header__list-link">Строка</a></li>
+                <li><a href="collections.html" class="header__list-link">Подборки</a></li>
+                <li><a href="bookmarks.html" class="header__list-link">Закладки</a></li>
+                <li><a href="profile.html" class="header__list-link">Профиль</a></li>
+            </ul>
+            <img src="/img/logo-ssss.svg" alt="logo" class="logo-vert">
+        </nav>
+        <div class="flex-logo">
+            <img src="/img/logo-ssss.svg" class="logo">
+        </div>
+    </header>
+    <main class="main">
+        <section class="hero">
+            <div class="table">
+                    <div class="desktop-bookmarks" id="desktop-bookmarks">
+                        <div class="first-line__readed"><button id="readed">Прочитано</button></div>
+                        <div class="first-line__plan"><button id="plan">Планы</button></div>
+                        <div class="first-line__reading first-line__active"><button id="reading">Читаю</button></div>
+                        <div class="first-line__favorites"><button id="favorites">Избранные</button></div>
+                    </div>
+                    <div class="mobile-bookmarks" id="mobile-bookmarks">
+                        <select id="navigation-select" class="navigation-select" >
+                            <option value="readed">Прочитано</option>
+                            <option value="plan">Планы</option>
+                            <option value="reading" selected>Читаю</option>
+                            <option value="favorites">Избранные</option>
+                        </select>
+                    </div>
+                <div class="bookmarks-bibli" id="bookmarks"> 
+                    <div class="bookmarks-book">Название</div>
+                    <div class="bookmarks-book">Название</div>
+                    <div class="bookmarks-book">Название</div>
+                    <div class="bookmarks-book">Название</div>
+                    <div class="bookmarks-book">Название</div>
+                    <div class="bookmarks-book">Название</div>
+                    <div class="bookmarks-book">Название</div>
+                    <div class="bookmarks-book">Название</div>
+                    <div class="bookmarks-book">Название</div>
+                    <div class="bookmarks-book">Название</div>
+                    <div class="bookmarks-book">Название</div>
+                    <div class="bookmarks-book">Название</div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <div class="stroke__footer">
+            <div class="footer__main-block">
+                <div><a href="index.html">Строка</a></div>
+                <div><a href="collections.html">Подборки</a></div>
+                <div><a href="bookmarks.html">Закладки</a></div>
+                <div><a href="profile.html">Профиль</a></div>
+            </div>
+            <div class="footer__main-block">
+                <div>mail: stroka@mail.example</div>
+                <div>tg: @stroka</div>
+                <div>tel: +7 (123) 456-78-90</div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="js/table.js">
+</script>
+<script src="/js/burger.js"></script>
+
+</html>

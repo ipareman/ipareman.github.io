@@ -1,0 +1,89 @@
+.modal-stroke__books-back {
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto;
+    transform: translateX(100%);
+    transition: transform .3s ease-in-out;
+}
+
+.modal-stroke__books-back.active {
+    transform: translateX(0%);
+}
+
+.modal-stroke__books-content {
+    width: 22rem;
+    height: 100%;
+    background-color: white;
+    border-left: 1px solid #7D7979;
+    overflow-x: clip;
+    background-size: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    overflow-y: scroll;
+}
+
+.modal-stroke__books-main-block-content {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-stroke__books-block img {
+    width: 7.8125rem; 
+    height: auto;
+    margin-top: 0.625rem;
+    border: 1px solid #C3C2C3;
+    transition: border .2s, opacity .4s;
+}
+
+.modal-stroke__books-block:nth-last-of-type(1) {
+    margin-bottom: 1.313rem;
+}
+
+.modal-stroke__books-main-block-content input[type=checkbox] {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.modal-stroke__books-main-block-content label:has(input[type=checkbox]:checked) img {
+	border: 1px solid #292920;
+}
+
+.modal-stroke__books-main-block-content label:has(input[type=checkbox]:not(:checked)) img {
+    border: 1px solid #C3C2C3;
+    opacity: .7;
+}
+
+.modal-stroke__books-main-block-content label:has(input[type=checkbox]:not(:checked)) img:hover {
+	border: 1px solid #292920;
+}
+
+#books-input {
+    width: 18.125rem;
+    padding-top: 1.67rem;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #292920;
+    outline: none;
+    text-align: center;
+    font-family: Mltsvfont;
+    font-size: 1.25rem;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    margin-bottom: 1.313rem;
+}
+
+.modalopen {
+    overflow: hidden;
+}

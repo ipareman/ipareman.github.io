@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Строка</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="header__menu">
+            <ul class="header__list">
+                <li><a href="index.html" class="header__list-link">Строка</a></li>
+                <li><a href="collections.html" class="header__list-link">Подборки</a></li>
+                <li><a href="bookmarks.html" class="header__list-link">Закладки</a></li>
+                <li><a href="profile.html" class="header__list-link">Профиль</a></li>
+            </ul>
+        </nav>
+        <a href="" class="hamburger">
+            <span class="hamburger__plank"></span>
+            <span class="hamburger__plank"></span>
+            <span class="hamburger__plank"></span>
+        </a>
+        <nav class="header__menu-vertical">
+            <ul class="header__list-vertical">
+                <li><a href="index.html" class="header__list-link">Строка</a></li>
+                <li><a href="collections.html" class="header__list-link">Подборки</a></li>
+                <li><a href="bookmarks.html" class="header__list-link">Закладки</a></li>
+                <li><a href="profile.html" class="header__list-link">Профиль</a></li>
+            </ul>
+            <img src="/img/logo-ssss.svg" alt="logo" class="logo-vert">
+        </nav>
+        <div class="flex-logo">
+            <img src="/img/logo-ssss.svg" class="logo">
+        </div>
+    </header>
+    <main class="main">
+        <section class="hero-books">
+            <div class="parent-book">
+                <div class="div1">ФИО</div>
+                <div class="div2">Годы жизни</div>
+                <div class="div3">Жанры</div>
+                <div class="div4">Фамилия Имя Отчество</div>
+                <div class="div5">ХХ.ХХ.ХХХХ - ХХ.ХХ.ХХХХ</div>
+                <div class="div6">...</div>
+            </div>
+            <search class="search-question" role="search">
+                <form class="search__form-question">
+                    <input class="search__form-input-question" type="search">
+                </form>
+                <button class="search__button-question">Задать вопрос</button>
+            </search>
+            <div class="any-book__answer-buy">
+                <div class="any-book__answer"> 
+                    Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание направлений прогрессивного развития. Задача организации, в особенности же постоянный количественный рост и сфера нашей активности требуют от нас анализа существенных финансовых и административных условий. Равным образом постоянный количественный рост и сфера нашей активности   
+                </div>
+                <span class="any-book__buy">
+                    <a href="#">Купить премиум</a>
+                </span>
+            </div>
+            <div class="table">
+                <div class="desktop-bookmarks author" id="desktop-bookmarks">
+                    <div class="first-line__readed"><button id="readed">Жанр 1</button></div>
+                    <div class="first-line__plan"><button id="plan">Жанр 2</button></div>
+                    <div class="first-line__reading first-line__active"><button id="reading">Жанр 3</button></div>
+                    <div class="first-line__favorites"><button id="favorites">Жанр 4</button></div>
+                </div>
+                <div class="mobile-bookmarks" id="mobile-bookmarks">
+                    <select id="navigation-select" class="navigation-select" >
+                        <option value="readed">Жанр 1</option>
+                        <option value="plan">Жанр 2</option>
+                        <option value="reading" selected>Жанр 3</option>
+                        <option value="favorites">Жанр 4</option>
+                    </select>
+                </div>
+                <div class="bookmarks-bibli" id="bookmarks"> 
+                    <div class="bookmarks-book">Название</div>
+                    <div class="bookmarks-book">Название</div>
+                    <div class="bookmarks-book">Название</div>
+                    <div class="bookmarks-book">Название</div>
+                    <div class="bookmarks-book">Название</div>
+                    <div class="bookmarks-book">Название</div>
+                    <div class="bookmarks-book">Название</div>
+                    <div class="bookmarks-book">Название</div>
+                    <div class="bookmarks-book">Название</div>
+                    <div class="bookmarks-book">Название</div>
+                    <div class="bookmarks-book">Название</div>
+                    <div class="bookmarks-book">Название</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="stroke__footer without">
+            <div class="footer__main-block">
+                <div><a href="index.html">Строка</a></div>
+                <div><a href="collections.html">Подборки</a></div>
+                <div><a href="bookmarks.html">Закладки</a></div>
+                <div><a href="profile.html">Профиль</a></div>
+            </div>
+            <div class="footer__main-block">
+                <div>mail: stroka@mail.example</div>
+                <div>tg: @stroka</div>
+                <div>tel: +7 (123) 456-78-90</div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/table.js"></script>
+</body>
+<script src="/js/burger.js"></script>
+
+</html>

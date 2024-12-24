@@ -1,0 +1,42 @@
+@font-face {
+    font-family: "Mltsvfont";
+    src: local("Mltsvfont"),
+         url("/fonts/Mltsvfont1.woff2") format("woff2"),
+         url("/fonts/Mltsvfont1.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Type-Machine";
+    src: local("Type-Machine"),
+        url("/fonts/Type-Machine.woff2") format("woff2"),
+        url("/fonts/Type-Machine.woff") format("woff");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-weight: normal;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background-image: url('/img/paper.svg');
+    background-color: #FAFAFA;
+    background-size: auto;
+    background-repeat: repeat; 
+    font-family: "Mltsvfont";
+}
+
+input {
+    font-family: "Mltsvfont", "Type-Machine";
+}

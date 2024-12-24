@@ -1,0 +1,113 @@
+/* .first-line {
+    display: flex;
+    margin: 0 auto;
+    width: 53.125rem;
+    border: none;
+    border-bottom: 1px solid #292920;
+    margin-top: 15.9rem;
+    font-size: 1.5rem;
+    justify-content: center;
+}
+
+
+.first-line div {
+    position: relative;
+    top: 1px;
+    padding-bottom: 0.625rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+.first-line button {
+    outline: none;
+    border: none;
+    padding: none;
+    background-color: transparent;
+    color: #C3C2C2;
+} */
+
+.table {
+    margin: 0 auto;
+}
+
+.first-line__active {
+    border-bottom: 1px solid Background;
+    border-left: 1px solid #292920;
+    border-right: 1px solid #292920;
+}
+
+.bookmarks-bibli {
+    max-width: 53.125rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 7.813rem);
+    grid-column-gap: 1.25rem;
+    grid-row-gap: 2.063rem;
+    justify-content: space-around;
+    margin: 5.563rem auto 0 auto;
+    border-right: 1px solid #292920;
+    border-left: 1px solid #292920;
+    padding-left: 5.563rem;
+    padding-right: 5.563rem;
+}
+
+.bookmarks-book {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 11.438rem;
+    background-color: #A1A1A1;
+    box-sizing: border-box;
+    color: #EDE9E9;
+    font-size: 1.25rem;
+}
+
+/* MOBILE */
+.mobile-bookmarks {
+    display: none;
+    margin-top: 16.35rem;
+    justify-content: center;
+    border-bottom: 1px solid #292920;
+}
+
+.navigation-select {
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 1.5rem;
+    width: fit-content;
+    padding-bottom: 0.5rem;
+}
+
+
+/* DESKTOP */
+.desktop-bookmarks {
+    display: flex;
+    margin: 0 auto;
+    width: 53.125rem;
+    border: none;
+    border-bottom: 1px solid #292920;
+    margin-top: 15.9rem;
+    font-size: 1.5rem;
+    justify-content: center;
+}
+
+.desktop-bookmarks div {
+    position: relative;
+    top: 1px;
+    padding-bottom: 0.625rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+.desktop-bookmarks button {
+    outline: none;
+    border: none;
+    padding: none;
+    background-color: transparent;
+    color: #C3C2C2;
+}
+
+.first-line__active button {
+    color: #292920;
+}
+
