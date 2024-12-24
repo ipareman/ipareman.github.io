@@ -310,6 +310,11 @@
     .parent a {
         color: #292920; text-decoration: underline dashed #7B7B7B; text-underline-offset: 3px; text-decoration-thickness: 1px;
     }
+    .parent > div,
+    .hero__reg-line-form div,
+    .hero__auth-line-form div {
+        padding: 3vw;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -317,12 +322,7 @@
     .quotes {
         left: 10vw;
     }
-
-    .parent > div,
-    .hero__reg-line-form div,
-    .hero__auth-line-form div {
-        padding: 3vw;
-    }
+   
 }
 
 @media screen and (max-width: 320px) {
