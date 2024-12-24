@@ -80,6 +80,6 @@
     background-clip: padding-box;
 }
 
-.body.modalopen {
+body.modalopen {
     overflow: hidden;
 }
