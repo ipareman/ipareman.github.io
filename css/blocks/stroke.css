@@ -79,3 +79,7 @@
     border-right: 9px solid rgba(0, 0, 0, 0);
     background-clip: padding-box;
 }
+
+.body.modalopen {
+    overflow: hidden;
+}
